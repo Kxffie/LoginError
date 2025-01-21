@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -88,8 +88,10 @@
         e.preventDefault();
         const username = document.querySelector('input[name="username"]').value;
         const password = document.querySelector('input[name="password"]').value;
-        username = username.lowercase();
-        password = password.lowercase();
+        
+        username = username.toLowerCase();
+        password = password.toLowerCase();
+        
         console.log('button clicked')
         console.log(username, password)
 
